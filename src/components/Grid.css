@@ -1,0 +1,38 @@
+.grid-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .table-wrapper {
+    max-width: 90%;
+    margin: auto;
+    overflow-x: auto;
+  }
+  
+  .grid-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+  }
+  
+  .grid-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    min-width: 80px;
+    cursor: pointer;
+  }
+  
+  .grid-table td:focus {
+    outline: 2px solid blue;
+    background-color: #f0f8ff;
+  }
+  
+  .grid-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .grid-table tr:hover {
+    background-color: #e0e0e0;
+  }
+  
