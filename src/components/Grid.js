@@ -21,7 +21,7 @@ const Grid = () => {
         }
 
         try {
-            const res = await axios.get("http://localhost:5000/api/grid/grid", {
+            const res = await axios.get("https://first-backend-ct5u.onrender.com/api/grid/grid", {
                 headers: { Authorization: `Bearer ${token}` },
             });
 
@@ -56,7 +56,7 @@ const Grid = () => {
 
             try {
                 await axios.post(
-                    "http://localhost:5000/api/grid/upload",
+                    "https://first-backend-ct5u.onrender.com/api/grid/upload",
                     { data: formattedData, mergedCells: mergedCellsData },
                     { headers: { Authorization: `Bearer ${token}` } }
                 );
@@ -136,7 +136,7 @@ const Grid = () => {
 
         try {
             await axios.post(
-                "http://localhost:5000/api/grid/update",
+                "https://first-backend-ct5u.onrender.com/api/grid/update",
                 { data: updatedData, mergedCells: updatedMergedCells },
                 { headers: { Authorization: `Bearer ${token}` } }
             );
